@@ -1,0 +1,4 @@
+Error {
+    code=413;
+    message="Payload Too Large: Your query produced too much data.  Try to request less data. [memory]  The request needs more memory (44070 MB) than is ever safely available in this Java setup (7680 MB). (TableWriterAll.cumulativeTable)";
+}

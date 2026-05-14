@@ -1,12 +1,13 @@
 # ioos_downloader
 
 **Prototype for GSoC 2026 — Enhancing CrocoLakeTools with IOOS Data Sync from ERDDAP**
+{Note that this is just experimental and decoupled for crocolaketools for now.}
 
 This is a standalone prototype of the ERDDAP downloader layer being designed for [CrocoLakeTools](https://github.com/boom-lab/crocolaketools-public). It is intentionally decoupled from CrocoLakeTools so the design can be developed and tested in isolation before being ported back in.
 
 ## Architecture
 
-Three-layer architecture, mirroring the pattern outlined by the mentor on [CrocoLakeTools issue #44](https://github.com/boom-lab/crocolaketools-public/issues/44):
+Although its for layered but we can bring it within the three layer architecture. As this is just a prototype we can care less about the abstraction for now and for on testing and application.
 
 ```
 scripts/download_ioos_gliders.py    <-- Layer 1: CLI argument parsing
@@ -57,12 +58,15 @@ For ERDDAP servers that don't support parquet, override `response_format` to `"n
 ## Install
 
 ```bash
-git clone <this repo>
-cd ioos_downloader
+git clone https://github.com/mahi-anol/GSoC26-Enhancing-CrocoLakeTools-with-IOOS-Data-Sync-from-ERDDAP.git
+cd Experimental
 pip install -e .
 ```
 
 ## Run
+
+First of all tryout the Error_Generator.py, look inside the script, I commented out some important details.
+After generating the error, go through next steps to see my solution.
 
 Dry-run against the live IOOS Glider DAC (lists what would be downloaded):
 

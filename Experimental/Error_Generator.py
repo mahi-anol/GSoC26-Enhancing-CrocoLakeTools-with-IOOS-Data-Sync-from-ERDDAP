@@ -2,7 +2,18 @@ import requests
 import time
 
 server = "https://gliders.ioos.us/erddap"
-ds_id = "amlr01-20181216T0641-delayed"
+ds_id = "amlr01-20181216T0641-delayed"  # For this ds id, we get and error.
+# A workaround I found is, downloading temporary chunks. THen merging them to create the final perquet.
+# For some files generates error.
+# For some files it works. Usually when files are too big, direct download is causing error.
+# Look at Experimental/amlr01-20181216T0641-delayed.parquet, it will generate.
+"""
+Error {
+    code=413;
+    message="Payload Too Large: Your query produced too much data.  Try to request less data. [memory]  The request needs more memory (44070 MB) than is ever safely available in this Java setup (7680 MB). (TableWriterAll.cumulativeTable)";
+}
+
+"""
 url = f"{server}/tabledap/{ds_id}.parquet"
 
 print(f"Downloading {ds_id}...")
