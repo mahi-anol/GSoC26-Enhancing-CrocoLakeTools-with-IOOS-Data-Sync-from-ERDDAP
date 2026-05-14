@@ -119,7 +119,7 @@ return self.dataset_ids
 
 **Why this blocks the project:** the proposal's deliverable (proposal section 3.1, 4) is specifically to sync **delayed-mode** data - the quality-controlled science data CrocoLake actually consumes. gliderpy's default of `delayed=False` actively removes those datasets from results. Every call site in our downloader would need to pass `delayed=True` explicitly.
 
-**Bonus bug I noticed in 1.3:** `DatasetList.get_ids()` line 256 returns `self.dataset_ids`, but `self.dataset_ids` is only assigned inside the `if not self.delayed:` branch. If someone constructs `DatasetList(delayed=True)` and calls `get_ids()`, the method raises `AttributeError` (no `self.dataset_ids`). Worth a separate gliderpy PR if I have time, but not blocking - we're not using gliderpy.
+**bug I noticed in 1.3:** `DatasetList.get_ids()` line 256 returns `self.dataset_ids`, but `self.dataset_ids` is only assigned inside the `if not self.delayed:` branch. If someone constructs `DatasetList(delayed=True)` and calls `get_ids()`, the method raises `AttributeError` (no `self.dataset_ids`). Worth a separate gliderpy PR if I have time, but not blocking - we're not using gliderpy.
 
 ### 1.4 The verdict
 
