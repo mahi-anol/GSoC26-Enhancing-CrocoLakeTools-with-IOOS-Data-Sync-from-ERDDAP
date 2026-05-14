@@ -1,6 +1,7 @@
 # ioos_downloader
 
 **Prototype for GSoC 2026 — Enhancing CrocoLakeTools with IOOS Data Sync from ERDDAP**
+
 {Note that this is just experimental and decoupled for crocolaketools for now.}
 
 This is a standalone prototype of the ERDDAP downloader layer being designed for [CrocoLakeTools](https://github.com/boom-lab/crocolaketools-public). It is intentionally decoupled from CrocoLakeTools so the design can be developed and tested in isolation before being ported back in.
