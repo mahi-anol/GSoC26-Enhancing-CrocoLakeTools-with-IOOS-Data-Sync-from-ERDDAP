@@ -133,7 +133,7 @@ gliderpy is built around a single use case: real-time glider data from one speci
 
 Both of these are candidates for upstream PRs. Both have small, contained fixes.
 
-### 2.1 Bug A — `parquet` is not in `download_formats`, but `get_download_url()` happily emits parquet URLs anyway
+### 2.1 Bug A - `parquet` is not in `download_formats`, but `get_download_url()` happily emits parquet URLs anyway
 
 This is an inconsistency between two public methods, not a hard crash. But it forces users to know about an internal allowlist.
 
