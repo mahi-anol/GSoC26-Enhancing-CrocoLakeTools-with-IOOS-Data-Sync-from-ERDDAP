@@ -351,8 +351,6 @@ The `e.constraints = {"time>=": "2018-12-16T00:00:00+00:00"}` syntax is non-obvi
 
 ## 5. What I plan to do during community bonding
 
-Following Enrico's guidance in our GitHub thread ("if it can be done in reasonable time"):
-
 1. **Open erddapy PR #1: add `parquet` and `parquetWMeta` to `download_formats`** (Bug A, section 2.1). Small, contained, includes a test.
 2. **Open erddapy PR #2: fix the import-time crash in `servers_list()`** (Bug B, section 2.2). Small, contained, includes a test using a mocked httpx response.
 3. **Maybe open a gliderpy issue** documenting 1.3b if I have spare time (low priority).
