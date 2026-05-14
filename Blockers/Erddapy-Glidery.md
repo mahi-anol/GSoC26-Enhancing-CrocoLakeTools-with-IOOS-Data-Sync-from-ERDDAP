@@ -10,7 +10,7 @@ This document consists every problem I found in `gliderpy` and `erddapy` while b
 
 ## 1. gliderpy: three blockers for this project's scope
 
-The project goal (proposal section 3.2) is to sync **delayed-mode** data from **any IOOS ERDDAP** server, not just gliders. `gliderpy` works against this goal in three places.
+The gsoc project goal (proposal section 3.2) is to sync **delayed-mode** data from **any IOOS ERDDAP** server, not just gliders. `gliderpy` works against this goal in three places.
 
 ### 1.1 Server is hardcoded - non-glider servers crash at construction
 
