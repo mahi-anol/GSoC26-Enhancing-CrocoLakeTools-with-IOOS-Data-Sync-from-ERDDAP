@@ -355,8 +355,6 @@ The `e.constraints = {"time>=": "2018-12-16T00:00:00+00:00"}` syntax is non-obvi
 2. **Open erddapy PR #2: fix the import-time crash in `servers_list()`** (Bug B, section 2.2). Small, contained, includes a test using a mocked httpx response.
 3. **Maybe open a gliderpy issue** documenting 1.3b if I have spare time (low priority).
 
-Both erddapy PRs are well-scoped and benefit a much wider audience than just CrocoLakeTools. They're also exactly the kind of contribution that demonstrates GSoC produces durable open-source value beyond the immediate project.
-
 ---
 
 ## Appendix - file paths and line numbers cited
