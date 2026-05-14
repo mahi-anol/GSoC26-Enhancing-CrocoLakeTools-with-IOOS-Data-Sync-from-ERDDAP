@@ -84,7 +84,7 @@ if self.datasets is None:
 
 **File:** `gliderpy/fetchers.py`
 
-**First location — `GliderDataFetcher.query()`:**
+**First location - `GliderDataFetcher.query()`:**
 
 ```python
 # line 133 (default value)
