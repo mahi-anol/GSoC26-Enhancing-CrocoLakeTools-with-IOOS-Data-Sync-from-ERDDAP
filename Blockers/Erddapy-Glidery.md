@@ -138,7 +138,7 @@ Both of these are candidates for upstream PRs. Both have small, contained fixes.
 This is an inconsistency between two public methods, not a hard crash. But it forces users to know about an internal allowlist.
 
 **File:** `erddapy/core/url.py`
-**Lines:** 559–605
+**Lines:** 559-605
 
 ```python
 # line 559
@@ -156,7 +156,7 @@ download_formats = [
 **Then `ERDDAP.download_file()` validates against this list:**
 
 **File:** `erddapy/erddapy.py`
-**Lines:** 560–568
+**Lines:** 560-568
 
 ```python
 def download_file(
