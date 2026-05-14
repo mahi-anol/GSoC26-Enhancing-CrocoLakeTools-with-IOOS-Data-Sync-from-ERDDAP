@@ -363,7 +363,7 @@ Both erddapy PRs are well-scoped and benefit a much wider audience than just Cro
 
 ---
 
-## Appendix — file paths and line numbers cited
+## Appendix - file paths and line numbers cited
 
 | File | Lines | What's there |
 |---|---|---|
