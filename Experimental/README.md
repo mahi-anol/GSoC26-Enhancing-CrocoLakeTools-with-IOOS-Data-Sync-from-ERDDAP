@@ -61,6 +61,10 @@ For ERDDAP servers that don't support parquet, override `response_format` to `"n
 ```bash
 git clone https://github.com/mahi-anol/GSoC26-Enhancing-CrocoLakeTools-with-IOOS-Data-Sync-from-ERDDAP.git
 cd Experimental
+# create custom venv environment.
+python -m venv .venv
+# on linux
+source .venv/bin/activate 
 pip install -e .
 ```
 
