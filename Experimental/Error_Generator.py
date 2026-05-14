@@ -6,6 +6,8 @@ ds_id = "amlr01-20181216T0641-delayed"  # For this ds id, we get and error.
 # A workaround I found is, downloading temporary chunks. THen merging them to create the final perquet.
 # For some files generates error.
 # For some files it works. Usually when files are too big, direct download is causing error.
+# THis error is probabilly due to malinformed query created by erddapy. Mentioned about it in Blockers/Erddapy-Glider.py. (all variables are targeted)
+# so file becomes big, we only need some target variables..Need to look at this more...But for now chunking strategy works...
 # Look at Experimental/amlr01-20181216T0641-delayed.parquet, it will generate.
 """
 Error {
