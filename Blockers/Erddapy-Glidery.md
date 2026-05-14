@@ -4,9 +4,7 @@
 **Date:** 14 May 2026
 **Author:** Mahi Sarwar Anol
 
-This document collects every problem I found in `gliderpy` and `erddapy` while building the prototype, with exact file/line references so they can be verified independently. It then proposes concrete upstream contributions to `erddapy` (in line with Enrico's suggestion to fix in upstream where the scope is reasonable).
-
-All line numbers refer to the source trees uploaded into the project context (current stable releases of both packages at the time of writing).
+This document collects every problem I found in `gliderpy` and `erddapy` while building the prototype, with exact file/line references so they can be verified independently. It then proposes concrete upstream contributions to `erddapy` (where the scope is reasonable).
 
 ---
 
