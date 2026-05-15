@@ -99,7 +99,7 @@ if not delayed:
     ]
 ```
 
-**Second location — `DatasetList.get_ids()`:**
+**Second location - `DatasetList.get_ids()`:**
 
 ```python
 # line 217 (default value)
