@@ -370,13 +370,13 @@ The `e.constraints = {"time>=": "2018-12-16T00:00:00+00:00"}` syntax is non-obvi
 | `gliderpy/fetchers.py` | 250-255 | `DatasetList` filter applied |
 | `gliderpy/fetchers.py` | 256 | Latent AttributeError bug |
 | `gliderpy/servers.py` | 3-11 | `server_vars` with only one server |
-| `erddapy/core/url.py` | 60-66 | `_clean_response` — does NOT validate format |
+| `erddapy/core/url.py` | 60-66 | `_clean_response` - does NOT validate format |
 | `erddapy/core/url.py` | 441 | Module-level `get_download_url` definition |
 | `erddapy/core/url.py` | 529-532 | URL build with `?&` malformation when `variables` empty |
 | `erddapy/core/url.py` | 559-605 | `download_formats` list (no parquet) |
-| `erddapy/erddapy.py` | 315-397 | `ERDDAP.get_download_url` method — no format validation |
+| `erddapy/erddapy.py` | 315-397 | `ERDDAP.get_download_url` method - no format validation |
 | `erddapy/erddapy.py` | 367 | Only "validation": `_clean_response(response)` |
-| `erddapy/erddapy.py` | 560-568 | `ERDDAP.download_file` — does validate at line 566 |
+| `erddapy/erddapy.py` | 560-568 | `ERDDAP.download_file` - does validate at line 566 |
 | `erddapy/servers/servers.py` | 19-43 | `servers_list()` with incomplete `except` |
-| `erddapy/servers/servers.py` | 31 | `except httpx.HTTPError:` — misses ValueError from pd.read_json |
-| `erddapy/servers/servers.py` | 43 | `servers = servers_list()` — runs at import time |
+| `erddapy/servers/servers.py` | 31 | `except httpx.HTTPError:` - misses ValueError from pd.read_json |
+| `erddapy/servers/servers.py` | 43 | `servers = servers_list()` - runs at import time |
