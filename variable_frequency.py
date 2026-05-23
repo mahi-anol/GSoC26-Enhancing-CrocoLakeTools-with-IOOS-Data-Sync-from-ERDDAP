@@ -18,12 +18,11 @@ print(f"There are total {total_quantity_of_delayed_dataset} delayed datasets")
 
 # Counting how many times a variable appeared over all the datasets, through iteration overall the dataset.
 
-
 counter = Counter()
 failed = []
 
 for i, ds_id in enumerate(dataset_ids, 1):
-    info_url = f"{server}/info/{ds_id}/index.csv"
+    info_url = f"https://gliders.ioos.us/erddap/info/{ds_id}/index.csv"
     try:
         response_body = requests.get(info_url, timeout=30)
         response_body.raise_for_status()
