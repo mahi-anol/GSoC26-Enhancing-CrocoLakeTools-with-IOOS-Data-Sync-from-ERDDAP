@@ -34,7 +34,7 @@ for i, ds_id in enumerate(dataset_ids, 1):
         failed.append(ds_id)
         continue
 
-    if i % 50 == 0 or i == len(dataset_ids):
+    if i % 5 == 0 or i == len(dataset_ids):
         print(f"Inspection completed on {i} datasets out of {total_quantity_of_delayed_dataset}")
 
 # Bulding json body
