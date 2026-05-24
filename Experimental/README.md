@@ -51,8 +51,8 @@ pytest -m live tests/
 
 | File | What it does |
 |---|---|
-| `ioos_downloader/downloader.py` | Base class — basic HTTP download with retries |
-| `ioos_downloader/downloaderIOOS.py` | ERDDAP logic — list datasets, time-chunked download, shard concat |
-| `ioos_downloader/downloaderIOOSGliders.py` | Glider-specific — sets server URL, filters to `-delayed` datasets |
+| `ioos_downloader/downloader.py` | Base class - basic HTTP download with retries |
+| `ioos_downloader/downloaderIOOS.py` | ERDDAP logic - list datasets, time-chunked download, shard concat |
+| `ioos_downloader/downloaderIOOSGliders.py` | Glider-specific - sets server URL, filters to `-delayed` datasets |
 | `scripts/download_ioos_gliders.py` | CLI entry point |
 | `tests/test_downloaderIOOSGliders.py` | Tests |
