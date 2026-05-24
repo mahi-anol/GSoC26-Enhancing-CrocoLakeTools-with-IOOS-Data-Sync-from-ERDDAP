@@ -1,8 +1,10 @@
 # ioos_downloader
 
-Prototype for GSoC 2026 — downloading glider data from the [IOOS Glider DAC](https://gliders.ioos.us/erddap) as parquet files.
+Downloading glider data from the [IOOS Glider DAC](https://gliders.ioos.us/erddap) as parquet files.
 
-Decoupled from CrocoLakeTools for now so it can be tested standalone.
+Decoupled from CrocoLakeTools for now so it can be tested standalone. 
+
+N.B: This is just a minimal version for testing purpose and understanding the ERDDAP IOOS Server.
 
 ## Install
 
@@ -36,6 +38,7 @@ python scripts/download_ioos_gliders.py --output-dir ./data --all
 ## How it works
 
 Multi-year glider datasets exceed this and return HTTP 413. The downloader splits the time range into 30-day chunks, downloads each as a separate parquet shard, then concatenates them into one file. On 413 it halves the window and retries automatically.
+
 
 ## Tests
 
