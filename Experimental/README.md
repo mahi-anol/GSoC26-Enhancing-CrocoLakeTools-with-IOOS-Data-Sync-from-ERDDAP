@@ -37,14 +37,14 @@ python scripts/download_ioos_gliders.py --output-dir ./data --all
 
 ## How it works
 
-Multi-year glider datasets exceed this and return HTTP 413. The downloader splits the time range into 30-day chunks, downloads each as a separate parquet shard, then concatenates them into one file. On 413 it halves the window and retries automatically.
+The downloader splits the time range into 30-day chunks, downloads each as a separate parquet shard, then concatenates them into one file. On 413 it halves the window and retries automatically.
 
 
 ## Tests
 
 ```bash
-pytest tests/                # unit tests, no network needed
-pytest -m live tests/        # hits the real IOOS Glider DAC
+pytest tests/                
+pytest -m live tests/        
 ```
 
 ## Files
