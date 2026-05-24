@@ -80,7 +80,6 @@ def test_single_shot_when_no_coverage(mock_erddap, mock_cov, mock_dl, out):
     d._fetch("ds", os.path.join(out, "ds.parquet"))
     assert mock_dl.call_count == 1
 
-
 @pytest.mark.live
 def test_live_listing(tmp_path):
     d = DownloaderIOOSGliders(output_dir=str(tmp_path), dryrun=True)
