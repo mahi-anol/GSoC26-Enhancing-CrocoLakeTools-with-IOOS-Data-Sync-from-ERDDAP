@@ -6,7 +6,7 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-
+# Downloader Base class
 class Downloader:
     def __init__(self, output_dir, overwrite=False, dryrun=False):
         if not output_dir:

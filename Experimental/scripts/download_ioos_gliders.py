@@ -19,7 +19,7 @@ if __name__ == "__main__":
         delayed_only=not args.all,
         overwrite=args.overwrite,
         dryrun=args.dryrun,
-        chunk_days=args.chunk_days,
+        chunk_days=args.chunk_days, # CHunk size
     )
     result = d.download()
     print(f"Downloaded: {len(result['downloaded'])}, Skipped: {len(result['skipped'])}, Failed: {len(result['failed'])}")

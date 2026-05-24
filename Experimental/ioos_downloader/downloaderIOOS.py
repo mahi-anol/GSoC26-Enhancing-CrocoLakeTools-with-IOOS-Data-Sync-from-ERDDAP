@@ -13,6 +13,7 @@ from .downloader import Downloader
 logger = logging.getLogger(__name__)
 
 
+# IOOS specific downloader
 class DownloaderIOOS(Downloader):
     SERVER_URL = ""
     PROTOCOL = "tabledap"
@@ -81,6 +82,7 @@ class DownloaderIOOS(Downloader):
             cursor = chunk_end
         return shards
 
+    # Chunking strategy based on time
     def _try_window(self, dsid, w_start, w_end, window_days, shard_dir, idx):
         url = self._url(dsid, {
             "time>=": w_start.isoformat(),

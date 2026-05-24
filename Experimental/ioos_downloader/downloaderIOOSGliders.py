@@ -1,6 +1,7 @@
 from .downloaderIOOS import DownloaderIOOS
 
 
+# Glider Specific downloader.
 class DownloaderIOOSGliders(DownloaderIOOS):
     SERVER_URL = "https://gliders.ioos.us/erddap"
 
